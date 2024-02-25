@@ -1,0 +1,49 @@
+body {
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+}
+
+.navigasi {
+    list-style-type: none;
+}
+
+.navigasi li {
+    display: inline-flex;
+    margin-right: 10px;
+}
+
+.office {
+    display: flex;
+    justify-content: center;
+}
+
+.circle-image {
+    width: 100px;
+    height: 100px;
+    border: 1px solid black ;
+    border-radius: 50%;
+    margin-right: 10px;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.inquiry-box {
+    display: flex;
+    justify-content: space-around;
+}
+
+.inquiry-form {
+    display: flex;
+    flex-direction: column;
+}
+
+.output {
+    border: 2px solid black;
+}
