@@ -7,53 +7,122 @@
     <link rel="stylesheet" href="CSS/style.css">
 </head>
 <body>
-    <header>
-        <img src="" alt="Logo">
+    <header class="header-wrapper">
+        <img class="Logo1" src="assets/WhatsApp Image 2024-02-25 at 12.33.20_97e008a5.jpg" alt="Logo">
+        <h2><span>HMST</span></h2>
         <ul class="navigasi">
-            <li>HOME</li>
-            <li>OUR PROFILE</li>
-            <li>MESSAGE US</li>
+            <li class="aktif"><a href="#">HOME</a></li>
+            <li><a href="#">OUR PROFILE</a></li>
+            <li><a href="#">PORTOFOLIO</a></li>
+            <li><a href="#">MESSAGE US</a></li>
         </ul>
     </header>
 
+    <section class="home">
+        <div class="home-content">
+            <H1 id="rislan">Hi,<span id="name"> Muhammad Rislan Tristansyah</span></H1>
+            <h3 id="lan1">Welcome My Website</h3>
+            <p id="niv1">Our Company is one of the top IT consultant company in the world</p>
+            <p id="niv1">Menjadi pemimpin dalam industri kami dengan memberikan solusi inovatif dan berkualitas tinggi yang memenuhi kebutuhan pelangan kami secara holistik</p>
+            <button id="tombol">Change Name</button>
+        </div>
+
+        <div class="gaya"></div>
+    </section>
+
+    <div>
+    <img class="img-slidshow" src="assets/8096_09422929062021_biner.jpg">
+    <img class="img-slidshow"  src="assets/Apa-itu-Jaringan-Perusahaan-1200x675.jpg">
+    <img class="img-slidshow" src="assets/IMG_20230411_130857.jpg" >
+    <!--<button onclick="plusDivs(-1)"></button>
+    <button onclick="nextSlide(1)"></button>-->
+    </div>
+    <br><br>
+
     <div class="office">
         <div>
-            <div class="circle-image"></div>
-            <h5>jawa barat</h5>
+            <div class="circle-image" style="background-image:url(assets/braga-636c90d708a8b5441c514ba2.jpg) ;"></div>
+            <h5 class="i5">Bandung</h5>
         </div>
 
         <div>
-            <div class="circle-image"></div>
-            <h5>purwakarta</h5>
+            <div class="circle-image" style="background-image: url(assets/dekat-dari-jakarta-inilah-tempat-wisata-hits-di-purwakarta-160701d.jpg);"></div>
+            <h5 class="i5">Purwakarta</h5>
         </div>
 
         <div>
-            <div class="circle-image"></div>
-            <h5>cibatu</h5>
+            <div class="circle-image" style="background-image: url(assets/jakarta-office-buildings-wv7hk562m7r8va1i.jpg);"></div>
+            <h5 class="i5">Jakarta</h5>
         </div>
     </div>
 
-    <div class="inquiry-box">
+<br><br><br><br><br><br><br><br>
+
+    <!--<div class="inquiry-box">
         <form class="inquiry-form">
             <label for="name">Nama</label>
                 <input type="text" id="name" name="name">
-            <label for="date">Tanggal lahir</label> 
-                <input type="date">  
-            <label for="gender">Jenis Kelamin</label>
-            <select id="gender">
-                <option value="male">Pria</option>
-                <option value="female">Wanita</option>
-            </select>
-            <label>Pesan:</label>
-            <textarea></textarea>
+
+            
+            <label for="date">Tanggal lahir</label>
+                <input type="date">
+        <br>
+
+            <label class="gen" for="gender">Jenis Kelamin</label>
+     
+            <input type="radio" id="html" name="fav_language" value="pria">
+            <label class="gen" for="pria">Pria</label><br>
+            <input type="radio" id="css" name="fav_language" value="wanita">
+            <label class="gen" for="wanita">Wanita</label>
+            <br><br>
+             
+        
+            <label>Pesan</label>
+            <textarea rows="8"></textarea>
+             <br>    
             <button>Sumbit</button>                
         </form>
+    -->
 
-        <div class="output">
-            <!--Kosong-->
-        </div>
+    <h1 class="meg">Message US</h1>
+<div class="inquiry-box">
+    <form class="inquiry-form" name="message-form">
+        Nama: <input placeholder="Nama" type="text" name="full-name"/>
+        <br>
 
-    </div>
+        Tanggal Lahir:
+        <input type="date" name="birth-date"/>
+        <br>
+
+        Jenis Kelamin:
+        <input class="radio" type="radio" id="male" name="gender" value="male"/>
+        <label for="male">Pria</label>
+        <input class="radio" type="radio" id="female" name="gender" value="female"/>
+        <label for="female">Wanita</label>
+        <br>
+
+        Pesan:
+        <textarea placeholder="Pesan" name="messages"></textarea>
+        <br>
+
+        <button type="button" id="send-message-us-form" onclick="sendform">Sumbit</button>
+        <br>
+    </form>
     
+    <div class="output">
+        <b>Curent Time</b>
+        <p>Nama: <span id="sender-full-name"></span></p>
+        <p>Tanggal Lahir: <span id="sender-birth-date"></span></p>
+        <p>Jenis Kelamin: <span id="sender-gender"></span></p>
+        <p>Pesan: <span id="sender-messages"></span></p>
+    </div>
+</div>
+
+   
+
+       <!--<div class="output">
+        </div>-->
+
+    <script src="js/script.js"></script>
 </body>
 </html>
